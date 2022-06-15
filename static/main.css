@@ -1,0 +1,117 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+body{height:100%;}
+.container{
+	min-height:100%;
+	display:flex;
+	flex-direction:column;
+}
+body{
+	background-color:#F6F6F7;
+    height:100%;
+}
+
+.wraper {
+	display: flex;
+	flex-direction: column;
+	min-height: 90%;
+}
+content {
+	flex: 1 0 auto;
+}
+footer {
+	flex: 0 0 auto;
+}
+
+/*-----------------------------------*/
+/* header */
+header{
+    background-color:white;
+}
+
+.top-header, .bottom-header{
+    padding-right: 20%;
+    padding-left: 20%;
+}
+.logo img{
+    width: 19%;
+}
+.logo{
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.bottom-header{
+    background-color: black;
+    height: 5px;
+}
+
+.top-header{
+    background-color: white;
+}
+/* footer */
+
+footer{
+    background-color:black;
+}
+
+.top-footer, .bottom-footer{
+    padding-right: 20%;
+    padding-left: 20%;
+}
+
+.entrance-to-main-links a, .entrance-to-RSHW p, #link-RSHW a{
+    transition-duration: 0.3s;
+    color: white;
+    font-family: monospace;
+}
+
+.entrance-to-main-links, .entrance-to-RSHW p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.entrance-to-main-links a{
+    margin-right: 15px;
+    font-size: 16px;
+}
+
+.entrance-to-main-links a:hover, #link-RSHW a:hover{
+    transition-duration: 0.3s;
+    color: #EA002B;
+}
