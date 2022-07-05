@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="list-of-weapons">
+    {% for i in listOfWeapons %}
+        <a href="{{url_for('mainPage', wp=i )}}">{{i}}</a>
+    {% endfor %}
+    </div>
+{% endblock %}
