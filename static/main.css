@@ -85,21 +85,36 @@ header{
 	align-items: center;
 }
 #settings-el-1{
+	transition-duration: 0.2s;
 	margin-left: 40px;
 	font-family: monospace;
 	color: #ABAFB5;
 }
+#settings-el-1:hover{
+	transition-duration: 0.2s;
+	color:black;
+}
 #settings-el-2{
+	transition-duration: 0.2s;
 	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	color: black;
 	margin-right: 40px;
 	text-decoration: underline;
 }
+#settings-el-2:hover{
+	transition-duration: 0.2s;
+	color:#EA002B;
+	text-decoration: none;
+}
 #settings-el-3{
+	transition-duration: 0.2s;
 	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	color: black;
 }
-
+#settings-el-3:hover{
+	transition-duration: 0.2s;
+	color:#EA002B;
+}
 .level2{
 	height:80px;
 	padding-top: 15px;
@@ -155,7 +170,10 @@ header{
 	background: linear-gradient(142deg, rgba(234,0,44,1) 0%, rgba(247,90,31,1) 86%, rgba(243,125,35,1) 100%);
 	border-radius: 2px;
 }
-
+.enter-to-the-club button:hover{
+	background: rgb(243,125,35);
+	background: linear-gradient(142deg, rgba(243,125,35,1) 0%, rgba(247,90,31,1) 50%, rgba(234,0,44,1) 100%);
+}
 .bottom-header{
     background-color: black;
    
@@ -174,6 +192,9 @@ header{
 	align-items:center;
 }
 .all-weapons a{
+	flex-grow: 0;
+	white-space: nowrap;
+	position:relative;
 	color:white;
 	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	font-size: 16px;
@@ -181,6 +202,29 @@ header{
 .all-weapons :last-child{
 	color:#EA002B;
 	text-decoration: underline;
+}
+.all-weapons :last-child:hover{
+	text-decoration: none;
+}
+.all-weapons a:before{
+	position: absolute;
+	display: block;
+	content: "";
+	height:4px;
+	width:100%;
+	float:left;
+	background-color:#EA002B;
+	margin:auto;
+	bottom:-15px;
+	transition-duration: 0.5s;
+	transform:scale(0);
+}
+.all-weapons a:hover:before{
+	transition-duration: 0.5s;
+	transform:scale(1);
+}
+.all-weapons a:last-child:before{
+	transform:scale(0);
 }
 .top-header{
     background-color: white;
